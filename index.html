@@ -47,41 +47,49 @@
 <body>
 
   <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Causality of fingerprinting AI generative models</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Anonymous for double-blind review -->
-              <span class="author-block">Anonymous Authors</span>
-            </div>
+    <div class="video-wrapper header">
+      <div class="bg-overlay"></div>
+      <video playsinline autoplay muted loop poster="cake.jpg">
+        <source src="./static/videos/banner_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Currently under double-blind review at ACM Multimedia 2026</span>
-            </div>
-
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
             <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Paper link -->
-                <span class="link-block">
-                  <a href="static/pdfs/paper.pdf" target="_blank" class="external-link ">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
+              <h1 class="xtitle is-1 publication-title">Causality of fingerprinting AI generative models</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Anonymous for double-blind review -->
+                <span class="author-block">Anonymous Authors</span>
+              </div>
 
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://anonymous.4open.science/r/CF034/README.md" target="_blank" class="external-link ">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Currently under double-blind review at ACM Multimedia 2026</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Paper link -->
+                  <span class="link-block">
+                    <a href="static/pdfs/paper.pdf" target="_blank" class="external-link ">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Code link -->
+                  <span class="link-block">
+                    <a href="https://anonymous.4open.science/r/CF034/README.md" target="_blank" class="external-link ">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -90,14 +98,44 @@
     </div>
   </section>
 
-  <!-- Teaser Image -->
+  <!-- Marquee section for Motivation Images -->
   <section class="hero teaser">
     <div class="container is-max-desktop">
-      <div class="hero-body">
-        <img src="static/images/framework_overview.png" alt="Framework Overview" style="width:100%;">
-        <h2 class="subtitle has-text-centered">
-          Overview of the <strong>Causal Fingerprints (CF)</strong> framework: bridging the gap between passive attribution and active manipulation through Structural Causal Disentanglement.
-        </h2>
+      <div class="marquee-wrapper">
+        <div class="container">
+          <div class="marquee-block">
+            <div class="marquee-inner to-left">
+              <span>
+                <div class="marquee-item">
+                  <img src="static/images/governance_results.png" alt="Motivation: Injection/Anonymization"/>
+                  <p class="text-white">Counterfactual Governance</p>
+                </div>
+                <div class="marquee-item">
+                  <img src="static/images/disentanglement_verification.png" alt="Motivation: Disentanglement/Swapping"/>
+                  <p class="text-white">Causal Disentanglement</p>
+                </div>
+                <div class="marquee-item">
+                  <img src="static/images/robustness_results.png" alt="Motivation: Robustness"/>
+                  <p class="text-white">Robustness Analysis</p>
+                </div>
+              </span>
+              <span>
+                <div class="marquee-item">
+                  <img src="static/images/governance_results.png" alt="Motivation: Injection/Anonymization"/>
+                  <p class="text-white">Counterfactual Governance</p>
+                </div>
+                <div class="marquee-item">
+                  <img src="static/images/disentanglement_verification.png" alt="Motivation: Disentanglement/Swapping"/>
+                  <p class="text-white">Causal Disentanglement</p>
+                </div>
+                <div class="marquee-item">
+                  <img src="static/images/robustness_results.png" alt="Motivation: Robustness"/>
+                  <p class="text-white">Robustness Analysis</p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
