@@ -269,7 +269,7 @@ a:hover:after{
   animation: marqueeRight 25s linear infinite;
 }
 .marquee-item{
-  width: 230px;
+  width: 460px;
   height: 230px;
   display: inline-block;
   margin: 0 10px;
@@ -279,8 +279,8 @@ a:hover:after{
 }
 
 .marquee-item img{
-  width: 230px;
-  height: 160px;
+  width: 460px;
+  height: 230px;
 }
 
 @keyframes marqueeLeft{
