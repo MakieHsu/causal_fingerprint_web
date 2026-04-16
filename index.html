@@ -65,7 +65,7 @@
               <div class="publication-links">
                 <!-- Paper link -->
                 <span class="link-block">
-                  <a href="#" target="_blank" class="external-link ">
+                  <a href="static/pdfs/paper.pdf" target="_blank" class="external-link ">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -75,7 +75,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/YOUR_REPO_HERE" target="_blank" class="external-link ">
+                  <a href="https://anonymous.4open.science/r/CF034/README.md" target="_blank" class="external-link ">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -124,15 +124,30 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-five-fifths">
           <h2 class="title is-3">Methodology</h2>
+          
+          <!-- Methodology Image -->
+          <div class="has-text-centered">
+            <img src="static/images/methodology_framework.png" alt="Causal Fingerprint Methodology Framework" style="width:100%; margin-bottom: 20px;">
+          </div>
+
           <div class="content has-text-justified">
             <p>
-              We propose <strong>Causal Fingerprints (CF)</strong>, a novel framework that redefines generative fingerprints as <em>intervenable causal variables</em> within a structural causal model (SCM). By explicitly factorizing the generative process into semantic content and fingerprint-dependent mechanism components, our formulation enables disentangled representation learning where fingerprint features are independent of content.
+              We propose <strong>Causal Fingerprints (CF)</strong>, a novel framework that redefines generative fingerprints as <strong>intervenable causal variables</strong> within a structural causal model (SCM). By explicitly factorizing the generative process into semantic content and fingerprint-dependent mechanism components, our formulation enables disentangled representation learning where fingerprint features are independent of content.
             </p>
+            
+            <p>
+              Our approach addresses the fundamental limitations of existing methods that rely on statistical correlations. By redefining fingerprints as causal variables, we bridge the gap between passive attribution and active controllability. This framework naturally supports a unified set of operations across diverse application scenarios:
+            </p>
+
             <ul>
-              <li><strong>Fingerprint Injection:</strong> Enables robust copyright tagging without modifying the original model.</li>
-              <li><strong>Fingerprint Anonymization:</strong> Removes model-specific traces to protect privacy.</li>
-              <li><strong>Fingerprint Tampering:</strong> Facilitates controlled source transfer for verification and stress testing.</li>
+              <li><strong>Fingerprint Injection:</strong> Enables non-repudiable and robust copyright attribution by proactively injecting source-specific signals into the generation process.</li>
+              <li><strong>Fingerprint Anonymization:</strong> Ensures complete privacy protection of model identity by removing model-specific traces, allowing users to share images without identifiable traces.</li>
+              <li><strong>Fingerprint Tampering/Swapping:</strong> Verifies the operability of the generative mechanism while preserving content integrity, facilitating controlled source transfer for verification and stress testing.</li>
             </ul>
+
+            <p>
+              By integrating causal representation learning, counterfactual intervention, and generative modeling, Causal Fingerprints transform source attribution from a passive task into an active, interpretable, and causally grounded process.
+            </p>
           </div>
         </div>
       </div>
