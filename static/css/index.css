@@ -342,3 +342,22 @@ a:hover:after{
 .header a{
   color:white;
 }
+
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card .card-content {
+  flex-grow: 1;   
+}
+
+
