@@ -344,6 +344,10 @@ a:hover:after{
 }
 
 
+/* 修复卡片居中与悬停效果 */
+.section .is-flex.is-justify-content-center {
+  margin: 0 auto;
+}
 
 /* 增强卡片体验 */
 .card {
@@ -364,5 +368,4 @@ a:hover:after{
   flex-direction: column;
   justify-content: center;
 }
-
 
