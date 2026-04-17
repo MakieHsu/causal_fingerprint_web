@@ -359,7 +359,7 @@ section .is-flex > a:hover {
 }
 
 /* 增强卡片体验 */
-.card {
+/* .card {
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
@@ -376,5 +376,5 @@ section .is-flex > a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
