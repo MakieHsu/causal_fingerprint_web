@@ -349,6 +349,15 @@ a:hover:after{
   margin: 0 auto;
 }
 
+/* Logo 卡片悬停效果 */
+section .is-flex > a {
+  transition: transform 0.3s ease;
+}
+
+section .is-flex > a:hover {
+  transform: translateY(-8px);
+}
+
 /* 增强卡片体验 */
 .card {
   transition: all 0.3s ease;
