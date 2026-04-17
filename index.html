@@ -283,59 +283,43 @@
     </div>
   </section>
 
-<!-- 修复版：横向并排 Logo 卡片区（居中对齐） -->
+<!-- 最终修复版：只显示 Logo + 强制一行居中（不换行成两排） -->
 <section class="section" style="background-color: #f8f9fa; padding: 3rem 1.5rem;">
   <div class="container is-max-desktop">
     <h2 class="title is-4 has-text-centered" style="margin-bottom: 2.5rem; color: #2c3e50;">
       Affiliated Institutions & Conferences
     </h2>
     
-    <!-- 关键修复：添加 is-justify-content-center -->
-    <div class="is-flex is-flex-wrap-wrap is-justify-content-center" 
-         style="gap: 1.5rem; padding-bottom: 1rem;">
+    <!-- 关键：is-flex + is-justify-content-center + nowrap + overflow-x-auto -->
+    <div class="is-flex is-flex-wrap-nowrap is-justify-content-center is-overflow-x-auto" 
+         style="gap: 2rem; padding-bottom: 1rem; scrollbar-width: thin; -webkit-overflow-scrolling: touch;">
 
 
-      <!-- 卡片 3: City University of Macau -->
-      <a href="https://www.cityu.edu.mo/" target="_blank" class="card" style="min-width: 260px; max-width: 280px; flex: 1 1 260px; text-decoration: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-        <div class="card-image" style="background: #fff; padding: 30px 20px 20px; height: 140px; display: flex; align-items: center; justify-content: center;">
-          <img src="static/images/logox.png" alt="City University of Macau" style="max-height: 110px; width: auto; object-fit: contain;">
-        </div>
-        <div class="card-content has-text-centered" style="padding: 1.25rem; background: #fff;">
-          <p class="title is-5" style="color: #2c3e50; margin-bottom: 0.25rem;">City University of Macau</p>
-          <p class="subtitle is-6 has-text-grey">澳門城市大學</p>
+      <!-- City University of Macau -->
+      <a href="https://www.cityu.edu.mo/" target="_blank" style="text-decoration: none; min-width: 240px; text-align: center;">
+        <div style="background: #fff; padding: 35px 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 160px; display: flex; align-items: center; justify-content: center;">
+          <img src="static/images/logo (1).png" alt="City University of Macau" style="max-height: 120px; width: auto; object-fit: contain;">
         </div>
       </a>
 
-      <!-- 卡片 4: Faculty of Data Science -->
-      <a href="#" target="_blank" class="card" style="min-width: 260px; max-width: 280px; flex: 1 1 260px; text-decoration: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-        <div class="card-image" style="background: #fff; padding: 25px 20px; height: 140px; display: flex; align-items: center; justify-content: center;">
-          <img src="static/images/2cb1d5280b5c67a1d901eb60eb6b583a_1500X1500.jpg" alt="Faculty of Data Science" style="max-height: 120px; width: auto; object-fit: contain;">
-        </div>
-        <div class="card-content has-text-centered" style="padding: 1.25rem; background: #fff;">
-          <p class="title is-5" style="color: #2c3e50; margin-bottom: 0.25rem;">Faculty of Data Science</p>
-          <p class="subtitle is-6 has-text-grey">數據科學學院</p>
+      <!-- Faculty of Data Science -->
+      <a href="https://fds.cityu.edu.mo/home" target="_blank" style="text-decoration: none; min-width: 240px; text-align: center;">
+        <div style="background: #fff; padding: 35px 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 160px; display: flex; align-items: center; justify-content: center;">
+          <img src="static/images/2cb1d5280b5c67a1d901eb60eb6b583a_1500X1500.jpg" alt="Faculty of Data Science" style="max-height: 125px; width: auto; object-fit: contain;">
         </div>
       </a>
       
-      <!-- 卡片 1: GrinLab -->
-      <a href="#" target="_blank" class="card" style="min-width: 260px; max-width: 280px; flex: 1 1 260px; text-decoration: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-        <div class="card-image" style="background: #111; padding: 30px 20px 20px; height: 140px; display: flex; align-items: center; justify-content: center;">
-          <img src="static/images/grinlab.png" alt="GrinLab" style="max-height: 110px; width: auto; object-fit: contain;">
-        </div>
-        <div class="card-content has-text-centered" style="padding: 1.25rem; background: #fff;">
-          <p class="title is-5" style="color: #2c3e50; margin-bottom: 0.25rem;">GrinLab</p>
-          <p class="subtitle is-6 has-text-grey">Research Group</p>
+      <!-- GrinLab -->
+      <a href="#" target="_blank" style="text-decoration: none; min-width: 240px; text-align: center;">
+        <div style="background: #111; padding: 35px 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 160px; display: flex; align-items: center; justify-content: center;">
+          <img src="static/images/grinlab.png" alt="GrinLab" style="max-height: 120px; width: auto; object-fit: contain;">
         </div>
       </a>
 
-      <!-- 卡片 2: ACM Multimedia 2026 -->
-      <a href="https://acmmm2026.org/" target="_blank" class="card" style="min-width: 260px; max-width: 280px; flex: 1 1 260px; text-decoration: none; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-        <div class="card-image" style="background: #fff; padding: 25px 20px 15px; height: 140px; display: flex; align-items: center; justify-content: center;">
-          <img src="static/images/LOGO-ACM-2026-V2.png" alt="ACM Multimedia 2026" style="max-height: 125px; width: auto; object-fit: contain;">
-        </div>
-        <div class="card-content has-text-centered" style="padding: 1.25rem; background: #fff;">
-          <p class="title is-5" style="color: #2c3e50; margin-bottom: 0.25rem;">ACM Multimedia 2026</p>
-          <p class="subtitle is-6 has-text-grey">Rio de Janeiro, Brazil</p>
+      <!-- ACM Multimedia 2026 -->
+      <a href="https://acmmm2026.org/" target="_blank" style="text-decoration: none; min-width: 240px; text-align: center;">
+        <div style="background: #fff; padding: 35px 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 160px; display: flex; align-items: center; justify-content: center;">
+          <img src="static/images/LOGO-ACM-2026-V2.png" alt="ACM Multimedia 2026" style="max-height: 130px; width: auto; object-fit: contain;">
         </div>
       </a>
 
