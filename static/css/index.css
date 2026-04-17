@@ -270,7 +270,7 @@ a:hover:after{
 }
 .marquee-item{
   width: 960px;
-  height: 390px;
+  height: 400px;
   display: inline-block;
   margin: 0 10px;
   float: left;
@@ -280,7 +280,7 @@ a:hover:after{
 
 .marquee-item img{
   width: 960px;
-  height: 290px;
+  height: 300px;
 }
 
 @keyframes marqueeLeft{
